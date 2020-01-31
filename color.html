@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color game</title>
+</head>
+<link rel="stylesheet" type="text/css" href="col.css">
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<body>
+	<h1>The Great
+	<br> 
+	<span id="colorDisplay">RGB</span> 
+    <br>
+    Color Game</h1>
+	<div id="stripe">
+	<button id="reset">New colors</button>
+    <span id="message"></span>
+    <button id="easyBtn">Easy</button>
+    <button id="hardBtn" class="selected">Hard</button>
+    </div>
+	<div class="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div><div class="square"></div>
+	<div class="square"></div>
+    </div>
+    <div class="container">
+    	<button id="help">Help?</button>
+    	<div id="empty"></div>
+    </div>
+    <script>
+    	$("#help").click(function(){
+           $("#empty").fadeToggle(500,function(){
+           	$("#empty").html("<img src='https://upload.wikimedia.org/wikipedia/commons/2/28/RGB_illumination.jpg'>");
+            })
+    	});
+    
+    </script>
+
+</body>
+<script type="text/javascript" src="color.js"></script>
+</html>
